@@ -9,7 +9,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 0.75fr 0.2fr;
     grid-template-areas: 
     "nav nav nav nav"
     "hero hero hero hero"
@@ -53,4 +53,20 @@
 #footer{
     background-color: yellow;
     grid-area: footer
+}
+
+
+@media(max-width: 550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "nav"
+        "hero"
+        "project1"
+        "project2"
+        "project3"
+        "project4"
+        "footer";
+    }
 }
