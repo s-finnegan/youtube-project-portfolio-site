@@ -16,42 +16,89 @@
     "project1 project2 project3 project4"
     "footer footer footer footer"
     ;
-    grid-gap: 0.3em;
+    grid-gap: 0.1em;
 }
 
 
 #nav{
-    background-color: orange;
+    background-color: black;
     grid-area: nav;
 }
 
+#nav h1{
+    text-align: center;
+    color: white;
+}
+
+#project1 h2{
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+#project1 p{
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+#project2 h2{
+    text-align: center;
+    padding: 5px;
+}
+
+#project2 p{
+    text-align: center;
+}
+
+#project3 h2{
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+#project3 p{
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+#project4 h2{
+    text-align: center;
+    padding: 5px;
+}
+ #project4 p{
+    text-align: center;
+ }
+
+
 #hero{
-    background-color: pink;
+    background-color:black;
     grid-area:hero;
 }
 
 #project1{
-    background-color: brown;
+    background-color:black;
     grid-area: project1;
 }
 
 #project2{
-    background-color: red;
+    background-color: green;
     grid-area: project2
 }
 
 #project3{
-    background-color: purple;
+    background-color: black;
     grid-area: project3;
 }
 
 #project4{
-    background-color: lime;
+    background-color: green;
     grid-area: project4
 }
 
 #footer{
-    background-color: yellow;
+    background-color: black;
     grid-area: footer
 }
 
