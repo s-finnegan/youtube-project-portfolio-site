@@ -9,16 +9,21 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 0.75fr 0.2fr;
+    grid-template-rows: 0.2fr 0.5fr 0.3fr 0.75fr 0.2fr;
     grid-template-areas: 
     "nav nav nav nav"
     "hero hero hero hero"
+    "about about about about"
     "project1 project2 project3 project4"
     "footer footer footer footer"
     ;
     grid-gap: 0.1em;
 }
 
+ img{
+    max-width: 100%;
+    height: auto;
+}
 
 #nav{
     background-color: black;
@@ -29,6 +34,24 @@
     text-align: center;
     color: white;
 }
+
+#about{
+    grid-area: about;
+    background-color: black;
+}
+
+#about h2{
+     text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+#about p{
+     text-align: center;
+    padding: 5px;
+    color: white;
+}
+
 
 #project1 h2{
     text-align: center;
@@ -106,10 +129,11 @@
 @media(max-width: 550px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 1fr 1fr 1fr 1fr 0.2fr;
         grid-template-areas:
         "nav"
         "hero"
+        "about"
         "project1"
         "project2"
         "project3"
